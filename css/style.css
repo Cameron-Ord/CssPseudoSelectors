@@ -1,0 +1,29 @@
+#page_header{
+
+display: grid;
+justify-items: left;
+align-content: center;
+}
+
+#page_header:hover{
+
+    font-size: 70px;
+    color: red;
+}
+
+
+.article{
+
+display: grid;
+justify-items: center;
+align-content: center;
+
+}
+
+img:active{
+border-radius: 200px;
+border-style: solid;
+width: 2000px;
+height: 30px;
+color: blue;
+}
