@@ -1,29 +1,70 @@
-#page_header{
+@keyframes zorro{
 
-display: grid;
-justify-items: left;
-align-content: center;
+0%{
+
+    transform: translateX(0%) translateY(0%);
 }
 
-#page_header:hover{
-
-    font-size: 70px;
-    color: red;
-}
-
-
-.article{
-
-display: grid;
-justify-items: center;
-align-content: center;
+33%{
+transform: translateX(90vw) translateY(0%);
 
 }
 
-img:active{
-border-radius: 200px;
-border-style: solid;
-width: 2000px;
-height: 30px;
-color: blue;
+66%{
+
+    transform: translateX(0%) translateY(90vh);
+}
+
+100%{
+transform: translateX(90vw) translateY(90vh);
+
+}
+
+
+
+}
+
+
+
+
+
+#keyframe_section:hover>#key_box{
+
+
+    animation: zorro linear 2s infinite alternate;
+}
+
+
+
+#keyframe_section{
+
+    margin-top: 10vh;
+    height: 100vh;
+    width: 100%;
+}
+
+#key_box{
+
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    animation: zorro linear 2s;
+}
+
+
+
+
+#section{
+font-size: 2em;
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+
+#section:hover{
+font-size: 65em;
 }
